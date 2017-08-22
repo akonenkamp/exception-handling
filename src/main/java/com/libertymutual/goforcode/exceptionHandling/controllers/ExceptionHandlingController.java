@@ -81,7 +81,7 @@ public class ExceptionHandlingController {
      try {
      mv.addObject("urlResult", new URL(probablyAUrl));
      } catch (MalformedURLException urlFails) {
-         mv.addObject("urlResult", "must be URL");
+         mv.addObject("urlFailure", "must be URL");
 
      }
      return mv;
